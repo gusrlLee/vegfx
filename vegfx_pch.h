@@ -17,13 +17,13 @@
 // vulkan api
 #include <vulkan/vulkan.h>
 
-// shared pointer
-template<typename T>
-using ref = std::shared_ptr<T>;
-template<typename T, typename ... Args>
-constexpr ref<T> make(Args&& ... args)
-{
-	return std::make_shared<T>(std::forward<Args>(args)...);
+namespace vegfx {
+	// shared pointer
+	template<typename T>
+	using ref = std::shared_ptr<T>;
+	template<typename T, typename ... Args>
+	constexpr ref<T> make(Args&& ... args)
+	{
+		return std::make_shared<T>(std::forward<Args>(args)...);
+	}
 }
-
-// unique pointer not yet.. :-(

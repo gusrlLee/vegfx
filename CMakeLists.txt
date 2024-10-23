@@ -13,6 +13,8 @@ find_package(glm REQUIRED)
 find_package(spdlog REQUIRED)
 
 add_library(vegfx-core 
+	vegfx.h
+	vegfx.cpp
 
 	vegfx_pch.h
 	vegfx_structs.h
@@ -25,7 +27,6 @@ add_library(vegfx-core
 
 	vegfx_log.h
 	vegfx_log.cpp
-
 )
 
 target_link_libraries(vegfx-core Vulkan::Vulkan)
@@ -38,4 +39,4 @@ add_executable(${PROJECT_NAME}
 	main.cpp
 )
 
-target_link_libraries(${PROJET_NAME} vegfx-core)
+target_link_libraries(${PROJECT_NAME} vegfx-core)
