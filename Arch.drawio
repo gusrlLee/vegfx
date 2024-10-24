@@ -5,7 +5,7 @@
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="9" value="vegfx_swapchain" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="600" y="720" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="1000" y="630" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="17" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -16,23 +16,56 @@
                 <mxCell id="17" value="vegfx_application" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
                     <mxGeometry x="360" y="600" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" style="edgeStyle=none;html=1;" parent="1" source="19" target="17" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="19" value="vegfx_window" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="360" y="680" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="360" y="700" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="vegfx_scene" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="600" y="560" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="1000" y="530" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="vegfx_context" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="600" y="640" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="1000" y="580" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="vegfx_log" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="160" y="480" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="650" y="500" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" value="Main" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
                     <mxGeometry x="150" y="380" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="vegfx_engine" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="560" y="580" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="vegfx_renderer" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="360" y="650" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="vegfx_utils" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="680" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="vegfx&lt;br&gt;_graphics" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="560" y="630" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="vegfx_input" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="360" y="750" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="vegfx&lt;br&gt;_game" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="560" y="680" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="vegfx&lt;br&gt;_physcis" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="560" y="730" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="vegfx_renderpass" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="730" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="vegfx&lt;br&gt;_memory" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="560" y="780" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="vegfx_pipeline" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="780" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="vegfx_camera" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="480" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="vegfx_debug_util" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="870" y="580" width="120" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

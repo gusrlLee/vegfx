@@ -1,7 +1,9 @@
 #include "vegfx.h"
 #include "vegfx_log.h"
-#include "vegfx_window.h"
 
+#include "vegfx_utils.h"
+#include "vegfx_window.h"
+#include "vegfx_engine.h"
 
 namespace vegfx {
 	void init()
@@ -18,6 +20,20 @@ namespace vegfx {
 		Window::init(windowCreateInfo);
 
 		// crate engine
+		EngineCreateInfo engineCreateInfo;
+
+#if _DEBUG
+		VEGFX_LOG("Current device support list:");
+		printSupportedExtensionsByInstance();
+		printSupportedLayersByInstance();
+		engineCreateInfo.bIsUsedValidationLayer = true;
+#else 
+		engineCreateInfo.bIsUsedValidationLayer = false;
+#endif
+
+		setRequiredExtensions(engineCreateInfo);
+		setRequiredLayers(engineCreateInfo);
+		Engine::init(engineCreateInfo);
 
 	}
 	void terminate()

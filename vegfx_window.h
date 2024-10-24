@@ -19,7 +19,7 @@ namespace vegfx {
 		void update();
 
 	private:
-		static ref<Window> s_instance;
+		static ref<Window> sWindowInstance;
 
 		GLFWwindow* mpWindow;
 		WindowCreateInfo mWindowInfo;

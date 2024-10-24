@@ -6,7 +6,7 @@ namespace vegfx {
 
 	void Log::init()
 	{
-		spdlog::set_pattern("%^[%T] %n: %v%$");
-		sLogger = spdlog::stdout_color_mt("VEGFX");
+		spdlog::set_pattern("%^[%T] [%n]: %v%$");
+		sLogger = spdlog::stdout_color_mt("VEGFX SYSTEM");
 	}
 }

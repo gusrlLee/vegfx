@@ -11,6 +11,7 @@ find_package(glfw3 REQUIRED)
 find_package(Vulkan REQUIRED)
 find_package(glm REQUIRED)
 find_package(spdlog REQUIRED)
+find_package(VulkanMemoryAllocator REQUIRED)
 
 add_library(vegfx-core 
 	vegfx.h
@@ -21,18 +22,31 @@ add_library(vegfx-core
 
 	vegfx_application.h
 	vegfx_application.cpp
+
+	vegfx_engine.h
+	vegfx_engine.cpp
 	
 	vegfx_window.h
 	vegfx_window.cpp
 
+	vegfx_utils.h
+	vegfx_utils.cpp
+
 	vegfx_log.h
 	vegfx_log.cpp
+
+	vegfx_graphics.h
+	vegfx_graphics.cpp
+
+	vegfx_game.h
+	vegfx_game.cpp
 )
 
 target_link_libraries(vegfx-core Vulkan::Vulkan)
 target_link_libraries(vegfx-core glfw)
 target_link_libraries(vegfx-core glm::glm-header-only)
 target_link_libraries(vegfx-core spdlog::spdlog_header_only)
+target_link_libraries(vegfx-core GPUOpen::VulkanMemoryAllocator)
 
 
 add_executable(${PROJECT_NAME}

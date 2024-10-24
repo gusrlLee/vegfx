@@ -1,6 +1,7 @@
 #include "vegfx_application.h"
 #include "vegfx_log.h"
 #include "vegfx_structs.h"
+
 #include "vegfx_window.h"
 
 namespace vegfx {

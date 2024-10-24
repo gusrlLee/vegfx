@@ -2,16 +2,16 @@
 #include "vegfx_log.h"
 
 namespace vegfx {
-	ref<Window> Window::s_instance = nullptr;
+	ref<Window> Window::sWindowInstance = nullptr;
 
 	void Window::init(WindowCreateInfo info)
 	{
-		s_instance = make<Window>(info);
+		sWindowInstance = make<Window>(info);
 	}
 
 	ref<Window>& Window::get()
 	{
-		return s_instance;
+		return sWindowInstance;
 	}
 
 	Window::Window(WindowCreateInfo info)
@@ -24,6 +24,8 @@ namespace vegfx {
 			glfwTerminate();
 			abort();
 		}
+
+		VEGFX_INFO("Success to create window!");
 	}
 
 	Window::~Window()

@@ -17,12 +17,12 @@ namespace vegfx {
 #define VEGFX_INFO(...)		::vegfx::Log::get()->info(__VA_ARGS__)
 #define VEGFX_ERROR(...)	::vegfx::Log::get()->error(__VA_ARGS__)
 
-#define VEGFX_CHECK(x)			\
-	do {						\
-		VkResult err = x;		\
-		if (err)				\
-		{						\
-			VEGFX_ERROR(err);	\
-			abort();			\
-		}						\
-	} while(0)
+#define VEGFX_CHECK(x)						\
+	do {									\
+		VkResult err = x;					\
+		if (err)							\
+		{									\
+			std::cerr << err << std::endl;	\
+			abort();						\
+		}									\
+	} while(0)								\
