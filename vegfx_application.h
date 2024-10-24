@@ -1,6 +1,7 @@
 #pragma once
 #include "vegfx_pch.h"
 
+
 namespace vegfx {
 	class Application {
 	public:

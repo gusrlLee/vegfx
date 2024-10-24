@@ -1,35 +1,38 @@
 <mxfile host="65bd71144e">
     <diagram id="6Iji0ZsvruDSqFYtwALJ" name="Page-1">
-        <mxGraphModel dx="1005" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1242" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="9" value="Main" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="320" y="280" width="120" height="40" as="geometry"/>
+                <mxCell id="9" value="vegfx_swapchain" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="600" y="720" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="10" target="17" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="main" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="150" y="600" width="130" height="40" as="geometry"/>
+                    <mxGeometry x="160" y="600" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="vegfx_application" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="365" y="600" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="360" y="600" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" style="edgeStyle=none;html=1;" parent="1" source="19" target="17" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="vegfx_window" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="365" y="720" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="360" y="680" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="vegfx_scene" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="520" y="520" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="600" y="560" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="vegfx_context" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="365" y="680" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="600" y="640" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="vegfx_log" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
-                    <mxGeometry x="360" y="480" width="120" height="40" as="geometry"/>
+                <mxCell id="23" value="vegfx_log" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="160" y="480" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Main" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="150" y="380" width="120" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

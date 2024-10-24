@@ -1,4 +1,4 @@
-#pragma once 
+#pragma once
 #include "vegfx_pch.h"
 #include "spdlog/spdlog.h"
 
@@ -12,3 +12,17 @@ namespace vegfx {
 		static ref<spdlog::logger> sLogger;
 	};
 }
+
+#define VEGFX_LOG(...)		::vegfx::Log::get()->trace(__VA_ARGS__)
+#define VEGFX_INFO(...)		::vegfx::Log::get()->info(__VA_ARGS__)
+#define VEGFX_ERROR(...)	::vegfx::Log::get()->error(__VA_ARGS__)
+
+#define VEGFX_CHECK(x)			\
+	do {						\
+		VkResult err = x;		\
+		if (err)				\
+		{						\
+			VEGFX_ERROR(err);	\
+			abort();			\
+		}						\
+	} while(0)
