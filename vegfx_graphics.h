@@ -19,5 +19,9 @@ namespace vegfx {
 		VkInstance mVkInstance;
 		VkDebugUtilsMessengerEXT mVkDebugMessenger = VK_NULL_HANDLE;
 
+		VkPhysicalDevice mVkPhysicalDevice;
+		VkDevice mVkDevice;
+		VkSurfaceKHR mVKSurface;
+
 	};
 }

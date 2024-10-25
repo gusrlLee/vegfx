@@ -10,6 +10,7 @@ namespace vegfx {
 	{
 		mGraphicsInfo = info;
 
+		// application information 
 		VkApplicationInfo appInfo{};
 		appInfo.pApplicationName = "VEGFX APP";
 		appInfo.applicationVersion = VK_MAKE_VERSION(1, 0, 0);
@@ -17,6 +18,7 @@ namespace vegfx {
 		appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
 		appInfo.apiVersion = VK_API_VERSION_1_3;
 
+		// check extensions & layers
 		bool result = false; 
 		result = checkSupportedExtensions(mGraphicsInfo.glfwExtensionList.data(), mGraphicsInfo.glfwExtensionList.size());
 		if (!result)
@@ -31,6 +33,7 @@ namespace vegfx {
 			abort();
 		}
 
+		// instance information
 		VkInstanceCreateInfo instanceInfo{};
 		instanceInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
 #if __APPLE__
@@ -43,11 +46,16 @@ namespace vegfx {
 
 		VEGFX_CHECK(vkCreateInstance(&instanceInfo, nullptr, &mVkInstance));
 		
+		// setting debug messenger 
 		if (mGraphicsInfo.bIsUsedValidationLayer)
 		{
 			VkDebugUtilsMessengerCreateInfoEXT debugMessengerInfo = createDebugMessengerCreateInfo();
 			VEGFX_CHECK(createDebugUtilsMessengerEXT(mVkInstance, &debugMessengerInfo, nullptr, &mVkDebugMessenger));
 		}
+
+		// create device
+
+
 	}
 
 	Graphics::~Graphics()

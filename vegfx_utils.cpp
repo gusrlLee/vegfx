@@ -30,6 +30,19 @@ namespace vegfx {
         }
     }
 
+    void printSupportedDeviceList(VkInstance& instance)
+    {
+        uint32_t deviceCount = 0;
+        vkEnumeratePhysicalDevices(instance, &deviceCount, nullptr);
+        if (deviceCount == 0)
+        {
+            throw std::runtime_error("Failed to find GPUs with Vulkan API support!");
+        }
+
+        std::vector<VkPhysicalDevice> devices(deviceCount);
+
+    }
+
     void setRequiredExtensions(EngineCreateInfo &info)
     {
         uint32_t glfwExtensionCount = 0;

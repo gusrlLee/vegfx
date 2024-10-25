@@ -22,7 +22,7 @@ namespace vegfx {
 		VkResult err = x;					\
 		if (err)							\
 		{									\
-			std::cerr << err << std::endl;	\
+			std::cerr << err << std::endl;  \
 			abort();						\
 		}									\
 	} while(0)								\
